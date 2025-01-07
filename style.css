@@ -162,7 +162,16 @@ footer {
 }
 
 .responsive {
-    width: 100%;
-    height: auto;
-    max-width: 100%; /* Maksymalna szerokość obrazu to 100% szerokości kontenera */
+   width: 100%;         /* Ustawia szerokość na 100% kontenera */
+    height: auto;        /* Ustawia wysokość proporcjonalnie */
+    max-width: 100%;     /* Zapewnia, że obraz nie przekroczy szerokości kontenera */
+    object-fit: cover;   /* Zapewnia, że obraz wypełni kontener, zachowując proporcje */
 }
+
+section {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
